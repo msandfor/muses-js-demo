@@ -73,7 +73,7 @@
 <script>
   let x = 0;
   let y = 0;
-
+  let z = 0;
   let bug = document.querySelector("#bug");
 
   function moveDown() {
@@ -81,17 +81,37 @@
     bug.style.top = y;
     bug.style.transform = "rotate(180deg)";
   }
+
+  function moveUp() {
+    y -= 10;
+    bug.style.top = y;
+    bug.style.transform = "rotate(360deg)";
+  }
+
+  function moveRight() {
+    z += 10;
+    bug.style.left = z;
+    bug.style.transform = "rotate(90deg)";
+  }
+
+  function moveLeft() {
+    z -= 10;
+    bug.style.left = z;
+    bug.style.transform = "rotate(-90deg)";
+  }
+
+
   //TODO: Repeat these steps for the #up, #left and #right buttons
 
   function keypress(e) {
     if (e.code == "ArrowDown") {
       moveDown();
     } else if (e.code == "ArrowUp") {
-      //TODO
+      moveUp();
     } else if (e.code == "ArrowLeft") {
-      //TODO
+      moveLeft();
     } else if (e.code == "ArrowRight") {
-      //TODO
+      moveRight();
     }
   }
 

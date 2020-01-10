@@ -62,6 +62,7 @@
 <script>
   let x = 0;
   let y = 0;
+  let z = 0;
 
   let spaceship = document.querySelector("#spaceship");
 
@@ -71,5 +72,26 @@
   }
 
   document.querySelector("#down").onclick = moveDown;
+
+  function moveUp() {
+    y = y - 15;
+    spaceship.style.top = y;
+  }
+
+  document.querySelector("#up").onclick = moveUp;
+
+  function moveLeft() {
+    z = z - 15;
+    spaceship.style.left = z;
+  }
+
+  document.querySelector("#left").onclick = moveLeft;
+
+  function moveRight() {
+    z = z + 15;
+    spaceship.style.left = z;
+  }
+
+  document.querySelector("#right").onclick = moveRight;
 
 </script>

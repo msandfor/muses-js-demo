@@ -69,7 +69,7 @@
   /*** TASK 1 ***/
   function helloWorld() {
     /*TODO: Update message to say 'hello world'*/
-    alert("Update this message!")
+    alert("hello world")
   }
   document.querySelector("#button-1").onclick = helloWorld;
 
@@ -77,11 +77,12 @@
 
   /*** TODO: TASK 2 ***/
   function updateTextFunction() {
-    document.querySelector("#update-text").innerHTML = "update this text to have your message!";
+    document.querySelector("#update-text").innerHTML = "hello world";
   }
 
   function clearText() {
     //TODO: update 'updateText' to be an empty string of text;
+    document.querySelector("#update-text").innerHTML = "";
   }
 
   document.querySelector("#add-text-button").onclick = updateTextFunction;
@@ -94,7 +95,7 @@
   }
 
   //TODO: Update the query selector to find #button-4, so the function will work properly. 
-  document.querySelector("#WHERE-IS-THE-BUTTON").onclick = coolFunction;
+  document.querySelector("#button-3").onclick = coolFunction;
 </script>
 
 </html>

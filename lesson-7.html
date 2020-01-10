@@ -32,7 +32,7 @@
   <p>A variable represents a value (like a number or a word) that can change over time. </p>
   <div class="dotted-div"
     id="task-1">
-    <h2>Task 2: Updating a variable</h2>
+    <h2>Task 1: Updating a variable</h2>
     <div class="info">A variable is a value that can change. </div>
     <p> The 'counter' variable is changed by the 'plus' button </p>
     <p>Update the <code>minus()</code> function so that it subtracts from the counter variable, and moves the car
@@ -111,6 +111,8 @@
   }
 
   function minus() {
+    counter = counter - 1;
+    car.style.left = counter * 50;
     //TODO : make the minus function subtract 1 and then update the counter element. 
   }
 
@@ -121,7 +123,7 @@
   function changeColor() {
     let color = document.querySelector("#color-picker").value;
     //TODO: Update this to set the color to our new color variable. 
-    document.querySelector("#task-2").style.backgroundColor = 'white';
+    document.querySelector("#task-2").style.backgroundColor = color;
   }
 
   document.querySelector("#button-2").onclick = changeColor;
@@ -129,12 +131,12 @@
 
   /*** TASK 3 ***/
   //TODO: Add some more items to your shopping list. 
-  let shoppingList = ["milk", "eggs"];
+  let shoppingList = ["milk", "eggs", "apples", "pears", "peanut butter"];
   function printShoppingList() {
     document.querySelector("#shopping-total").innerHTML = shoppingList.length;
 
     //TODO: Update this text to display the first item in the list.
-    document.querySelector("#first-item").innerHTML = shoppingList[1];
+    document.querySelector("#first-item").innerHTML = shoppingList[0];
     document.querySelector("#shopping-list").innerHTML = shoppingList;
   }
 

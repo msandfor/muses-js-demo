@@ -68,7 +68,7 @@
   let loopElementWrapper = document.querySelector("#task-1");
   function runTheLoop() {
     /*TODO: Update 0 to be 10 - this will make the loop repeat 10 times*/
-    for (let i = 0; i < 1; i++) {
+    for (let i = 0; i < 10; i++) {
       loopElementWrapper.append("💚");
     }
   }
@@ -83,9 +83,10 @@
       let p = document.createElement("p");
       //TODO: Update '0' to be 'index'. This will make the loop print out how many times
       //it has run. 
-      p.innerHTML = `This loop has run ${0} times.`;
+      p.innerHTML = `This loop has run ${index} times.`;
       countingLoopWrapper.appendChild(p);
     }
+    
   }
 
   let countingButton = document.querySelector("#button-2");
@@ -101,7 +102,7 @@
       let item = document.createElement('li');
 
       //TODO: Update the task[0] so it prints out each element in the array 
-      item.innerHTML = tasks[0]
+      item.innerHTML = tasks[index]
       todoList.appendChild(item);
     }
   }

@@ -18,8 +18,8 @@
     /*  This style applies to all elements with a class of 'dotted-div'.
         To select a class in CSS, you use a dot followed by the class name, like this: */
     .dotted-div {
-      background-color: lightgray;
-      border: 2px dotted black;
+      background-color: blue;
+      border: 2px dotted green;
       margin-top: 10px;
       margin-bottom: 10px;
       padding: 10px;
@@ -30,19 +30,28 @@
         To select an id in CSS, you use a '#' followed by the id name.*/
     #task-2 {
       /*TODO: Add new styles here*/
+      background-color: green;
     }
 
 
     /***TASK 3***/
     /*  This selector changes all ".info" sections on the page*/
     .info {
-      color: black;
+      color: pink;
     }
 
     /*  This style applies to ".info" elements within an element with an id of "task-3"*/
     #task-3 .info {
-      color: black;
+      color: red;
     }
+
+  #task-4 {
+    background-image: linear-gradient(25deg, #2e2edf, #6570d4, #78adc7, #75eab6);
+    /* transform: rotate(45deg); */
+    font-size: 20px;
+  }
+
+
   </style>
 </head>
 
@@ -93,7 +102,7 @@
     </div>
   </div>
 
-  <div id="task-3"
+  <div id="task-4"
     class="dotted-div">
     <h2>Task 4: Additional CSS styles</h2>
     Try applying some other CSS styles to your elements, such as:
